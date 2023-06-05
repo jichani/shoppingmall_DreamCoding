@@ -21,9 +21,9 @@ function createHTMLString(item) {
 }
 
 function onButtonClick(event, items) {
-    const target = event.target;
-    const key = target.dataset.key;
-    const value = target.dataset.value;
+    const dataset = event.target.dataset;
+    const key = dataset.key;
+    const value = dataset.value;
 
     if (key == null || value == null) {
         return;
